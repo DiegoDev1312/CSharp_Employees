@@ -8,7 +8,8 @@ namespace Funcionários
     {
         static void Main(string[] args)
         {
-            string path = @"C:\Users\caval\OneDrive\Área de Trabalho\ExFiles\bd.txt";
+            string folder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string path = Path.Combine(folder, "db", "bd.txt");
 
             try
             {
